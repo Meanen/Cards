@@ -1,11 +1,18 @@
 #include <iostream>
+#include "Cards.h"
+
 
 using namespace std;
 
 int main (){
-	int a;
-	cout << "Hello World!";
-	cin >> a;
 
-	return 0;
+	Deck deck;
+
+	deck.deckGen ();
+	deck.shuffle ();
+
+	deck.printDeck ();
+	cout << deck.getNoCards () << endl;
+	system ( "pause" );
+
 }
